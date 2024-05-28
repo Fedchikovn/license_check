@@ -1,7 +1,11 @@
-const expirationDate = new Date('2024-05-28T04:32:00Z'); // Установите дату окончания лицензии
+const expirationDate = new Date('2024-05-28T04:32:00Z');
+
+console.log('Время окончания лицензии:', expirationDate.toUTCString());
 
 function checkLicense() {
     const currentDate = new Date();
+
+    console.log('Текущее время:', currentDate.toUTCString());
 
     if (currentDate > expirationDate) {
         return 'expired';
@@ -10,4 +14,4 @@ function checkLicense() {
     }
 }
 
-export { checkLicense };
+console.log('Состояние лицензии:', checkLicense());
