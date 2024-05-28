@@ -1,4 +1,4 @@
-const expirationDate = new Date('2024-05-28T05:16:00Z');
+const expirationDate = new Date('2024-05-28T05:25:00Z');
 
 console.log('Время окончания лицензии:', expirationDate.toUTCString());
 
